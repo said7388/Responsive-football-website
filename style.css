@@ -264,18 +264,65 @@ main {
  media screen design 
  -------------------- */
  @media only screen and (max-width: 668px){
-     body {
-         width: 100%;
-     }
-     .players{
+     .players, .video-section, .videos, .news{
+         display: grid;
          grid-template-columns: repeat(1, 1fr);
-         width: 100%;
-     }
-     
-     .player {
          width: 98%;
+         align-items: center;
+         justify-content: center;
      }
-     header, .video-section, .video-gallary, .news-section, footer{
+     .video-box{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-row-gap: 30px;
+         grid-column-gap: 0;
+         margin: 0%;
+         width: 100%;
+         padding: 2px;
+     }
+     .video-img img, .video {
+         width: 98%;
+         height: 100%;
+         margin: 0;
+         padding: 0%;
+     }
+     .video-info {
+         width: 94%;
+
+     }
+     .player{
+         width: 98%;
+         height: 100%;
+         margin: 0;
+         padding: 7px;
+     }
+     .news-heading{
+         text-align: center;
+     }
+     .news-post{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-row-gap: 20px;
+         width: 98%;
+         margin: 20px 0;
+         padding: 0%;
+         justify-content: center;
+         align-items: center;
+     }
+     .post{
+         display: flex;
+         width: 95%;
+     }
+     footer{
+         width: 90%;
+         align-items: center;
+         justify-content: center;
+     }
+     .footer-logo img{
+         width: 100%;
+         height: 100%;
+     }
+     header{
          display: none;
      }
  }
